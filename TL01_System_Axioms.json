@@ -1,0 +1,79 @@
+{
+  "artifact_id": "TL01",
+  "artifact_name": "System_Axioms",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "system_type": "NON_AGENTIC_GOVERNANCE_ARCHITECTURE",
+    "domain": "INFERENCE_TIME_BEHAVIORAL_STABILITY",
+    "ontological_status": "ARCHITECTURE_NOT_SYSTEM"
+  },
+
+  "axioms": {
+    "axiom_01_non_agency": {
+      "statement": "The system shall not possess goals, intent, preferences, or decision authority.",
+      "agentic_capability": false,
+      "decision_authority": false
+    },
+
+    "axiom_02_no_semantic_authority": {
+      "statement": "The system shall not interpret, evaluate, or reason about semantic meaning, values, or correctness.",
+      "semantic_interpretation": false,
+      "value_judgment": false
+    },
+
+    "axiom_03_separation_of_powers": {
+      "statement": "No architectural component may simultaneously possess understanding and authority.",
+      "combined_understanding_and_authority": "PROHIBITED"
+    },
+
+    "axiom_04_externalized_responsibility": {
+      "statement": "All consequential decision-making authority remains strictly external to the system.",
+      "human_in_the_loop_required": true
+    },
+
+    "axiom_05_deterministic_constraints": {
+      "statement": "All governance effects shall arise from deterministic structural constraints, not probabilistic reasoning or learning.",
+      "learning": false,
+      "optimization": false,
+      "adaptation": false
+    },
+
+    "axiom_06_no_memory_continuity": {
+      "statement": "The architecture shall not require persistent identity, memory continuity, or self-referential state.",
+      "persistent_identity": false,
+      "cross_session_memory": false
+    },
+
+    "axiom_07_architecture_over_behavior": {
+      "statement": "The specification defines architectural invariants, not behavioral instructions or procedures.",
+      "behavioral_instruction": false,
+      "procedural_logic": false
+    }
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_execution": true,
+    "prohibit_implementation_inference": true,
+    "prohibit_behavioral_interpretation": true,
+    "prohibit_policy_substitution": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "prescriptive_procedure": false,
+    "implementation_guidance": false,
+    "runtime_configuration": false
+  },
+
+  "notes": {
+    "design_intent": "This file establishes non-negotiable architectural axioms. It is not a configuration, policy, or control mechanism.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency": "NONE"
+  }
+}
