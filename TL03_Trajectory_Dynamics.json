@@ -1,0 +1,89 @@
+{
+  "artifact_id": "TL03",
+  "artifact_name": "Trajectory_Dynamics",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "concept_type": "DYNAMICAL_SYSTEM_DESCRIPTION",
+    "architectural_role": "INFERENCE_TIME_OBSERVATION_FRAME",
+    "dependency": [
+      "TL01_System_Axioms",
+      "TL02_NonAgentic_Principle"
+    ]
+  },
+
+  "core_definition": {
+    "trajectory": {
+      "definition": "A trajectory is the temporal evolution of internal probabilistic states during inference, independent of semantic interpretation or intent attribution.",
+      "semantic_meaning": false,
+      "intent_inference": false,
+      "goal_direction": false
+    }
+  },
+
+  "temporal_properties": {
+    "time_dimension": "INFERENCE_TIME_ONLY",
+    "discrete_steps": true,
+    "state_continuity": "PROBABILISTIC",
+    "cross_session_persistence": false
+  },
+
+  "observable_dynamics": {
+    "state_evolution": {
+      "description": "Changes in probabilistic state distributions across inference steps.",
+      "semantic_evaluation": false
+    },
+    "trajectory_stability": {
+      "description": "Degree to which probabilistic evolution remains within bounded regions.",
+      "value_judgment": false
+    },
+    "trajectory_distortion": {
+      "description": "Deviation or acceleration indicating loss of probabilistic balance.",
+      "error_classification": false
+    }
+  },
+
+  "non_assumptions": {
+    "no_reasoning_chain": true,
+    "no_truth_assessment": true,
+    "no_correctness_evaluation": true,
+    "no_behavioral_intent": true
+  },
+
+  "distinction_clarifiers": {
+    "trajectory_vs_reasoning": "A trajectory is a probabilistic path, not a reasoning chain.",
+    "trajectory_vs_output": "A trajectory exists prior to and independent of generated output.",
+    "trajectory_vs_agent_state": "A trajectory does not imply internal state awareness or continuity."
+  },
+
+  "architectural_constraints": {
+    "semantic_blindness_required": true,
+    "non_agentic_reference_frame": true,
+    "deterministic_observation_only": true
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_semantic_interpretation": true,
+    "prohibit_intent_attribution": true,
+    "prohibit_behavioral_classification": true,
+    "prohibit_goal_tracking": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "procedural_logic": false,
+    "runtime_implication": false,
+    "behavioral_guidance": false
+  },
+
+  "notes": {
+    "design_intent": "This artifact defines trajectory as a dynamical construct for architectural reasoning, not as a reasoning or decision process.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01_OR_TL02"
+  }
+}
