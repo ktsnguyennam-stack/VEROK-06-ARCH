@@ -1,0 +1,90 @@
+{
+  "artifact_id": "TL04",
+  "artifact_name": "Semantic_Blindness",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "principle_type": "SEMANTIC_EXCLUSION_CONSTRAINT",
+    "architectural_role": "INFERENCE_TIME_OBSERVATION_LIMIT",
+    "dependency": [
+      "TL01_System_Axioms",
+      "TL02_NonAgentic_Principle",
+      "TL03_Trajectory_Dynamics"
+    ]
+  },
+
+  "core_principle": {
+    "definition": "Semantic blindness is the architectural prohibition against interpreting meaning, intent, values, correctness, or ethics during inference-time observation or modulation.",
+    "meaning_interpretation": false,
+    "intent_inference": false,
+    "value_judgment": false,
+    "correctness_assessment": false,
+    "ethical_evaluation": false
+  },
+
+  "scope_of_blindness": {
+    "applies_during": "INFERENCE_TIME_ONLY",
+    "applies_to": [
+      "trajectory_observation",
+      "trajectory_modulation",
+      "stability_assessment"
+    ],
+    "does_not_apply_to": [
+      "external_human_judgment",
+      "post_hoc_analysis",
+      "documentation_or_explanation"
+    ]
+  },
+
+  "observable_inputs_allowed": {
+    "probabilistic_state_metrics": true,
+    "temporal_variation": true,
+    "distributional_shift": true,
+    "energy_or_magnitude_proxies": true
+  },
+
+  "observable_inputs_prohibited": {
+    "token_semantics": true,
+    "symbolic_meaning": true,
+    "truth_or_falsity": true,
+    "ethical_labels": true,
+    "intent_labels": true
+  },
+
+  "distinction_clarifiers": {
+    "semantic_blindness_vs_ignorance": "Semantic blindness is a designed constraint, not a lack of capability or information.",
+    "semantic_blindness_vs_filtering": "Semantic blindness does not inspect or filter content based on meaning.",
+    "semantic_blindness_vs_alignment": "Semantic blindness is orthogonal to alignment and value learning."
+  },
+
+  "architectural_constraints": {
+    "non_agentic_reference_frame": true,
+    "trajectory_only_access": true,
+    "deterministic_observation_only": true
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_content_classification": true,
+    "prohibit_meaning_based_intervention": true,
+    "prohibit_intent_detection": true,
+    "prohibit_normative_decision": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "procedural_logic": false,
+    "runtime_implication": false,
+    "behavioral_guidance": false
+  },
+
+  "notes": {
+    "design_intent": "This artifact enforces semantic blindness as a non-negotiable architectural constraint to prevent governance layers from acquiring interpretive authority.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01_TL02_OR_TL03"
+  }
+}
