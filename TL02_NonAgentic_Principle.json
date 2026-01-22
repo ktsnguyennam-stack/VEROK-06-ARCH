@@ -1,0 +1,69 @@
+{
+  "artifact_id": "TL02",
+  "artifact_name": "NonAgentic_Principle",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "principle_type": "NON_AGENTIC_REFERENCE_FRAME",
+    "architectural_role": "CONSTRAINT_DEFINITION",
+    "dependency": "TL01_System_Axioms"
+  },
+
+  "core_principle": {
+    "statement": "Non-agentic denotes the absence of goals, intent, decision authority, and self-directed action, not the negation of agentic systems under governance.",
+    "anti_agentic": false,
+    "agent_replacement": false,
+    "agent_suppression": false
+  },
+
+  "allowed_assumptions": {
+    "agentic_systems_may_exist": true,
+    "agentic_capabilities_at_execution_layer": true,
+    "multi_step_reasoning_outside_governance": true
+  },
+
+  "forbidden_assumptions": {
+    "governance_is_an_agent": true,
+    "governance_makes_decisions": true,
+    "governance_has_goals": true,
+    "governance_optimizes_outcomes": true
+  },
+
+  "reference_frame_constraints": {
+    "intent_attribution": "PROHIBITED",
+    "goal_inference": "PROHIBITED",
+    "preference_modeling": "PROHIBITED",
+    "authority_derivation": "PROHIBITED"
+  },
+
+  "distinction_clarifiers": {
+    "non_agentic_vs_anti_agentic": "Non-agentic governance constrains dynamics without opposing or replacing agentic execution.",
+    "non_agentic_vs_passive": "Non-agentic does not imply inactivity; it implies absence of intent and authority.",
+    "non_agentic_vs_alignment": "Non-agentic governance is orthogonal to alignment and value learning."
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_hidden_controller": true,
+    "prohibit_goal_embedding": true,
+    "prohibit_decision_substitution": true,
+    "prohibit_behavioral_authority": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "prescriptive_behavior": false,
+    "procedural_logic": false,
+    "runtime_implication": false
+  },
+
+  "notes": {
+    "design_intent": "This artifact defines the non-agentic reference frame as an architectural constraint, not a behavioral stance.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01"
+  }
+}
