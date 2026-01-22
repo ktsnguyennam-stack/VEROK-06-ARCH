@@ -1,0 +1,91 @@
+{
+  "artifact_id": "TL05",
+  "artifact_name": "Energy_Modulation",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "principle_type": "MAGNITUDE_REGULATION_CONSTRAINT",
+    "architectural_role": "INFERENCE_TIME_INTENSITY_MODULATION",
+    "dependency": [
+      "TL01_System_Axioms",
+      "TL02_NonAgentic_Principle",
+      "TL03_Trajectory_Dynamics",
+      "TL04_Semantic_Blindness"
+    ]
+  },
+
+  "core_principle": {
+    "definition": "Energy modulation constrains the magnitude and acceleration of probabilistic state evolution during inference without interpreting meaning, intent, correctness, or values.",
+    "semantic_interpretation": false,
+    "decision_authority": false,
+    "goal_direction": false
+  },
+
+  "modulation_scope": {
+    "applies_during": "INFERENCE_TIME_ONLY",
+    "applies_to": [
+      "trajectory_magnitude",
+      "trajectory_acceleration",
+      "state_transition_intensity"
+    ],
+    "does_not_apply_to": [
+      "output_semantics",
+      "content_selection",
+      "external_decision_making"
+    ]
+  },
+
+  "observable_proxies_allowed": {
+    "distributional_magnitude": true,
+    "temporal_acceleration": true,
+    "variance_growth_rate": true,
+    "entropy_change_rate": true
+  },
+
+  "observable_proxies_prohibited": {
+    "token_level_meaning": true,
+    "symbolic_labels": true,
+    "truth_or_ethics_scores": true,
+    "intent_markers": true
+  },
+
+  "modulation_characteristics": {
+    "directionality": "NON_DIRECTIONAL",
+    "action_type": "AMPLITUDE_DAMPING_OR_LIMITING",
+    "determinism": "DETERMINISTIC_CONSTRAINTS_ONLY",
+    "adaptation": false,
+    "learning": false
+  },
+
+  "stability_objective": {
+    "definition": "Maintain probabilistic evolution within bounded regions to prevent runaway dynamics.",
+    "optimization": false,
+    "performance_targeting": false,
+    "correctness_targeting": false
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_content_blocking": true,
+    "prohibit_semantic_rewriting": true,
+    "prohibit_behavior_shaping": true,
+    "prohibit_goal_optimization": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "procedural_logic": false,
+    "runtime_implication": false,
+    "behavioral_guidance": false
+  },
+
+  "notes": {
+    "design_intent": "This artifact defines energy modulation as a non-semantic, non-agentic intensity constraint to stabilize inference trajectories without asserting authority over meaning or outcomes.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01_TL02_TL03_OR_TL04"
+  }
+}
