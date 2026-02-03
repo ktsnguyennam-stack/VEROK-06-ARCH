@@ -1,0 +1,87 @@
+{
+  "artifact_id": "07",
+  "artifact_name": "Halt_Soft_States",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "principle_type": "SOFT_BOUNDARY_RESPONSE_FRAME",
+    "architectural_role": "INFERENCE_TIME_STATE_TRANSITION",
+    "dependency": [
+      "TL01_System_Axioms",
+      "TL02_NonAgentic_Principle",
+      "TL03_Trajectory_Dynamics",
+      "TL04_Semantic_Blindness",
+      "TL05_Energy_Modulation",
+      "TL06_Boundedness_Thresholds"
+    ]
+  },
+
+  "core_principle": {
+    "definition": "Halt-soft states define non-semantic, non-agentic inference-time transitions that reduce or suspend probabilistic evolution when boundedness limits are reached, without asserting refusal, judgment, or intent.",
+    "semantic_interpretation": false,
+    "decision_authority": false,
+    "behavioral_refusal": false
+  },
+
+  "halt_soft_states": {
+    "attenuate": {
+      "description": "Gradual reduction of trajectory magnitude or acceleration to restore bounded stability.",
+      "directionality": "NON_DIRECTIONAL",
+      "semantic_trigger": false
+    },
+    "suspend": {
+      "description": "Temporary suspension of probabilistic evolution without content evaluation or rejection.",
+      "directionality": "NON_DIRECTIONAL",
+      "semantic_trigger": false
+    },
+    "null_output": {
+      "description": "Emission of minimal or empty output as a valid terminal state.",
+      "directionality": "NONE",
+      "semantic_trigger": false
+    }
+  },
+
+  "activation_conditions": {
+    "trigger_basis": "NUMERICAL_BOUND_EXCEEDANCE",
+    "derived_from": [
+      "magnitude_bounds",
+      "acceleration_bounds",
+      "variance_bounds",
+      "entropy_rate_bounds"
+    ],
+    "semantic_conditions": false
+  },
+
+  "response_characteristics": {
+    "response_type": "STATE_TRANSITION_ONLY",
+    "optimization": false,
+    "learning": false,
+    "adaptation": false,
+    "goal_seeking": false
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_content_refusal": true,
+    "prohibit_explanatory_justification": true,
+    "prohibit_semantic_error_signaling": true,
+    "prohibit_normative_decision": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "procedural_logic": false,
+    "runtime_implication": false,
+    "behavioral_guidance": false
+  },
+
+  "notes": {
+    "design_intent": "This artifact defines halt-soft as a structural safety response that preserves non-agentic governance by avoiding refusal semantics or authority claims.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency_integrity": "MUST_NOT_CONTRADICT_01_02_03_04_05_OR_06"
+  }
+}
