@@ -1,0 +1,98 @@
+{
+  "artifact_id": "09",
+  "artifact_name": "Externalized_Authority",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "principle_type": "AUTHORITY_SEPARATION_CONSTRAINT",
+    "architectural_role": "DECISION_EXTERNALIZATION_FRAME",
+    "dependency": [
+      "01_System_Axioms",
+      "02_NonAgentic_Principle",
+      "03_Trajectory_Dynamics",
+      "04_Semantic_Blindness",
+      "05_Energy_Modulation",
+      "T06_Boundedness_Thresholds",
+      "07_Halt_Soft_States",
+      "08_Auditability_Only"
+    ]
+  },
+
+  "core_principle": {
+    "definition": "Externalized authority mandates that all consequential decisions, approvals, and normative judgments remain outside the system, with no delegation or inference of authority within the architecture.",
+    "internal_authority": false,
+    "decision_execution": false,
+    "normative_judgment": false
+  },
+
+  "authority_scope": {
+    "authority_holders": [
+      "human_operators",
+      "organizational_governance",
+      "legal_and_regulatory_frameworks"
+    ],
+    "non_authority_entities": [
+      "governance_layers",
+      "observation_layers",
+      "modulation_layers",
+      "audit_layers"
+    ]
+  },
+
+  "decision_flow_constraints": {
+    "decision_origin": "EXTERNAL_ONLY",
+    "decision_execution_within_system": false,
+    "implicit_authority_derivation": false,
+    "authority_escalation": "PROHIBITED"
+  },
+
+  "interaction_boundaries": {
+    "system_may": [
+      "expose_structural_signals",
+      "emit_non_semantic_state_indicators",
+      "enter_halt_soft_states"
+    ],
+    "system_may_not": [
+      "approve_or_deny_requests",
+      "select_outcomes",
+      "prioritize_values",
+      "override_external_decisions"
+    ]
+  },
+
+  "accountability_mapping": {
+    "accountable_entities": [
+      "deploying_organization",
+      "human_decision_makers"
+    ],
+    "non_accountable_entities": [
+      "non_agentic_governance_architecture",
+      "inference_modulation_components"
+    ]
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_internal_decision_authority": true,
+    "prohibit_normative_escalation": true,
+    "prohibit_authority_proxying": true,
+    "prohibit_decision_automation": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "procedural_logic": false,
+    "runtime_implication": false,
+    "behavioral_guidance": false
+  },
+
+  "notes": {
+    "design_intent": "This artifact enforces strict separation between system governance and decision authority, ensuring that VEROK constrains dynamics without becoming a decision-maker.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency_integrity": "MUST_NOT_CONTRADICT_01_02_03_04_05_06_07_OR_08"
+  }
+}
