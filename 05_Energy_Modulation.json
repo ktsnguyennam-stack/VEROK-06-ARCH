@@ -12,10 +12,10 @@
     "principle_type": "MAGNITUDE_REGULATION_CONSTRAINT",
     "architectural_role": "INFERENCE_TIME_INTENSITY_MODULATION",
     "dependency": [
-      "TL01_System_Axioms",
-      "TL02_NonAgentic_Principle",
-      "TL03_Trajectory_Dynamics",
-      "TL04_Semantic_Blindness"
+      "01_System_Axioms",
+      "02_NonAgentic_Principle",
+      "03_Trajectory_Dynamics",
+      "04_Semantic_Blindness"
     ]
   },
 
