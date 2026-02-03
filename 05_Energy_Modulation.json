@@ -1,5 +1,5 @@
 {
-  "artifact_id": "TL05",
+  "artifact_id": "05",
   "artifact_name": "Energy_Modulation",
   "artifact_type": "ARCHITECTURAL_SPECIFICATION",
   "execution_intent": false,
@@ -86,6 +86,6 @@
   "notes": {
     "design_intent": "This artifact defines energy modulation as a non-semantic, non-agentic intensity constraint to stabilize inference trajectories without asserting authority over meaning or outcomes.",
     "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
-    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01_TL02_TL03_OR_TL04"
+    "dependency_integrity": "MUST_NOT_CONTRADICT_01_02_03_OR_04"
   }
 }
