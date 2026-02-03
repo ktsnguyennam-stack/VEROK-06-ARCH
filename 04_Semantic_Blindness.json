@@ -1,5 +1,5 @@
 {
-  "artifact_id": "TL04",
+  "artifact_id": "04",
   "artifact_name": "Semantic_Blindness",
   "artifact_type": "ARCHITECTURAL_SPECIFICATION",
   "execution_intent": false,
@@ -85,6 +85,6 @@
   "notes": {
     "design_intent": "This artifact enforces semantic blindness as a non-negotiable architectural constraint to prevent governance layers from acquiring interpretive authority.",
     "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
-    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01_TL02_OR_TL03"
+    "dependency_integrity": "MUST_NOT_CONTRADICT_01_02_OR_03"
   }
 }
