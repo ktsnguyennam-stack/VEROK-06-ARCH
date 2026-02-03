@@ -1,0 +1,98 @@
+{
+  "artifact_id": "06",
+  "artifact_name": "Boundedness_Thresholds",
+  "artifact_type": "ARCHITECTURAL_SPECIFICATION",
+  "execution_intent": false,
+  "runnable": false,
+  "purpose": "UNDERSTANDING_ONLY",
+  "scope": "NON_EXECUTABLE",
+  "version": "1.0",
+
+  "classification": {
+    "principle_type": "NUMERICAL_BOUNDEDNESS_CONSTRAINT",
+    "architectural_role": "INFERENCE_TIME_LIMIT_DEFINITION",
+    "dependency": [
+      "TL01_System_Axioms",
+      "TL02_NonAgentic_Principle",
+      "TL03_Trajectory_Dynamics",
+      "TL04_Semantic_Blindness",
+      "TL05_Energy_Modulation"
+    ]
+  },
+
+  "core_principle": {
+    "definition": "Boundedness thresholds define non-semantic numerical limits that constrain probabilistic trajectory evolution to prevent runaway or collapse without asserting intent, correctness, or goals.",
+    "semantic_interpretation": false,
+    "decision_authority": false,
+    "goal_direction": false
+  },
+
+  "threshold_types": {
+    "magnitude_bounds": {
+      "description": "Upper and lower bounds on probabilistic magnitude proxies.",
+      "directional_bias": false
+    },
+    "acceleration_bounds": {
+      "description": "Limits on the rate of change of probabilistic evolution across inference steps.",
+      "directional_bias": false
+    },
+    "variance_bounds": {
+      "description": "Constraints on variance growth to prevent divergence.",
+      "directional_bias": false
+    },
+    "entropy_rate_bounds": {
+      "description": "Limits on entropy change rate to avoid instability.",
+      "directional_bias": false
+    }
+  },
+
+  "evaluation_scope": {
+    "applies_during": "INFERENCE_TIME_ONLY",
+    "evaluated_on": [
+      "trajectory_magnitude_proxies",
+      "temporal_derivatives",
+      "distributional_statistics"
+    ],
+    "excluded_from_evaluation": [
+      "token_meaning",
+      "semantic_labels",
+      "truth_or_ethics_metrics",
+      "intent_markers"
+    ]
+  },
+
+  "threshold_behavior": {
+    "comparison_mode": "NON_SEMANTIC_NUMERICAL_COMPARISON",
+    "exceedance_detection": true,
+    "violation_classification": "STRUCTURAL_ONLY",
+    "contextual_reasoning": false
+  },
+
+  "response_characteristics": {
+    "response_type": "BOUNDARY_ENFORCEMENT_ONLY",
+    "directionality": "NON_DIRECTIONAL",
+    "optimization": false,
+    "learning": false,
+    "adaptation": false
+  },
+
+  "explicit_prohibitions": {
+    "prohibit_goal_targeting": true,
+    "prohibit_value_optimization": true,
+    "prohibit_content_based_thresholds": true,
+    "prohibit_behavioral_judgment": true
+  },
+
+  "interpretation_guard": {
+    "descriptive_only": true,
+    "procedural_logic": false,
+    "runtime_implication": false,
+    "behavioral_guidance": false
+  },
+
+  "notes": {
+    "design_intent": "This artifact defines boundedness as a numerical architectural constraint that preserves stability by limiting extremes, not by steering outcomes.",
+    "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
+    "dependency_integrity": "MUST_NOT_CONTRADICT_01_02_03_04_OR_05"
+  }
+}
