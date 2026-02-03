@@ -64,6 +64,6 @@
   "notes": {
     "design_intent": "This artifact defines the non-agentic reference frame as an architectural constraint, not a behavioral stance.",
     "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
-    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01"
+    "dependency_integrity": "MUST_NOT_CONTRADICT_01"
   }
 }
