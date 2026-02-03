@@ -12,12 +12,12 @@
     "principle_type": "SOFT_BOUNDARY_RESPONSE_FRAME",
     "architectural_role": "INFERENCE_TIME_STATE_TRANSITION",
     "dependency": [
-      "TL01_System_Axioms",
-      "TL02_NonAgentic_Principle",
-      "TL03_Trajectory_Dynamics",
-      "TL04_Semantic_Blindness",
-      "TL05_Energy_Modulation",
-      "TL06_Boundedness_Thresholds"
+      "01_System_Axioms",
+      "02_NonAgentic_Principle",
+      "03_Trajectory_Dynamics",
+      "04_Semantic_Blindness",
+      "05_Energy_Modulation",
+      "06_Boundedness_Thresholds"
     ]
   },
 
