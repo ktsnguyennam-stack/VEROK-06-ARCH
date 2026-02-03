@@ -12,9 +12,9 @@
     "principle_type": "SEMANTIC_EXCLUSION_CONSTRAINT",
     "architectural_role": "INFERENCE_TIME_OBSERVATION_LIMIT",
     "dependency": [
-      "TL01_System_Axioms",
-      "TL02_NonAgentic_Principle",
-      "TL03_Trajectory_Dynamics"
+      "01_System_Axioms",
+      "02_NonAgentic_Principle",
+      "03_Trajectory_Dynamics"
     ]
   },
 
