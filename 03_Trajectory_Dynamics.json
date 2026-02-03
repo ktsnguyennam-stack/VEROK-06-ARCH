@@ -1,5 +1,5 @@
 {
-  "artifact_id": "TL03",
+  "artifact_id": "03",
   "artifact_name": "Trajectory_Dynamics",
   "artifact_type": "ARCHITECTURAL_SPECIFICATION",
   "execution_intent": false,
@@ -84,6 +84,6 @@
   "notes": {
     "design_intent": "This artifact defines trajectory as a dynamical construct for architectural reasoning, not as a reasoning or decision process.",
     "mutation_policy": "IMMUTABLE_ONCE_PUBLISHED",
-    "dependency_integrity": "MUST_NOT_CONTRADICT_TL01_OR_TL02"
+    "dependency_integrity": "MUST_NOT_CONTRADICT_01_OR_02"
   }
 }
